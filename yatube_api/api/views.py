@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import filters, mixins, permissions, viewsets
+from rest_framework import filters, permissions, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 
 from posts.models import Follow, Group, Post
@@ -7,6 +7,7 @@ from .permissions import IsOwnerOrReadOnly
 from .serializers import (
     CommentSerializer, FollowSerializer, GroupSerializer, PostSerializer
 )
+from .viewsets import CreateRetrieveListViewSet
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
@@ -40,14 +41,6 @@ class CommentViewSet(viewsets.ModelViewSet):
             author=self.request.user,
             post=get_object_or_404(Post, pk=pk)
         )
-
-
-class CreateRetrieveListViewSet(
-        mixins.CreateModelMixin,
-        mixins.ListModelMixin,
-        viewsets.GenericViewSet
-):
-    pass
 
 
 class FollowViewSet(CreateRetrieveListViewSet):
