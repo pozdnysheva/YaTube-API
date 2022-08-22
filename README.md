@@ -7,7 +7,7 @@
 - библиотека Simple JWT - работа с JWT-токеном
 
 ## API социальной сети блогеров **Yatube**
-Это API для проекта [YaTube](https://github.com/pozdnysheva/YaTube)
+REST API для проекта [YaTube](https://github.com/pozdnysheva/YaTube)
 
 У неаутентифицированных пользователей есть возможность получить посты пользователей соцсети, комментарии к постам, а также информацию о группах.
 
