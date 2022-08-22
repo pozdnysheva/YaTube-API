@@ -116,4 +116,4 @@ _GET .../api/v1/groups/2/_
 } 
 ```
 ### Автор
-Наталья Позднышева
+- [Позднышева Наталья](https://github.com/pozdnysheva "Github page")
