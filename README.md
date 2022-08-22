@@ -22,7 +22,7 @@ git clone https://github.com/pozdnysheva/YaTube-API.git
 ```
 
 ```
-cd api_final_yatube
+cd yatube_api
 ```
 
 Cоздать и активировать виртуальное окружение:
